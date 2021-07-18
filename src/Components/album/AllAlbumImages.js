@@ -38,6 +38,7 @@ const ImagesList = () => {
     e.preventDefault();
     if (albumId.trim().length === 0 || albumId === "") {
       setIsNotFound(true);
+
       return;
     }
     if (!Number.isInteger(+albumId) || +albumId < 0 || +albumId > 100) {
